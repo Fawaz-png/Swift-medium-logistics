@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, serif, sans-serif;
 }
 
 
@@ -53,7 +53,20 @@ nav {
 
 .navlinks a:hover::after {
     width: 100%;
+}
 
+.navlinks .active::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    display: block;
+    background-color: rgb(223, 27, 27);
+    margin-top: 10px;
+}
+
+.navlinks .active:hover::after{
+    width: 0;
+    transition: 0.3s;
 }
 
 .nav-open-btn {
@@ -133,7 +146,7 @@ nav {
     }
 
     .navlinks a:hover {
-        color: black;
+        color: red;
         background: white;
         transition: 0.2s;
     }
@@ -144,6 +157,15 @@ nav {
 
     .nav-close-btn {
         display: inline-block;
+    }
+
+    .navlinks .active::after{
+        display: none;
+    }
+
+    .navlinks .active{
+        background-color: white;
+        color: red;
     }
 }
 
@@ -233,7 +255,7 @@ nav {
 main h1 {
     font-size: 50px;
     font-weight: 500;
-    margin-top: 5%;
+    margin-top: 20%;
     text-align: center;
 }
 
@@ -266,7 +288,7 @@ main>h1::after {
 }
 
 .pic {
-    width: 302px;
+    width: 30%;
     border-radius: 50%;
 }
 
@@ -280,7 +302,9 @@ main>h1::after {
 }
 
 .text {
-    padding: 20px 40px;
+    width: 65%;
+    padding: 10px;
+    margin-left: 5%;    
 }
 
 .text h3 {
@@ -291,7 +315,7 @@ main>h1::after {
 
 .text p {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 500;
     line-height: 25px;
     letter-spacing: 1px;
 }
@@ -300,7 +324,7 @@ main>h1::after {
     color: #4070f4;
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 
@@ -334,6 +358,7 @@ main>h1::after {
 
     .about-us {
         width: 90%;
+        padding: 0;
     }
 
     .about {
@@ -344,6 +369,7 @@ main>h1::after {
 
     .text {
         padding: 20px 0;
+        width: 85%;
     }
 
     .about img {
@@ -365,7 +391,7 @@ main>h1::after {
 .projcard-container {
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 800px;
 }
 
 .projcard {
@@ -413,7 +439,7 @@ main>h1::after {
 
 .projcard-img {
     position: absolute;
-    width: 40%;
+    width: 50%;
     top: 0;
     left: 0;
     transition: transform 0.2s ease;
@@ -436,7 +462,7 @@ main>h1::after {
     position: absolute;
     top: 7%;
     bottom: 7%;
-    left: 430px;
+    left: 415px;
     width: calc(100% - 470px);
     font-size: 17px;
 }
@@ -665,9 +691,18 @@ main>h1::after {
     .smallscreencard .about-us {
         margin-bottom: 10%;
         width: 80%;
+        padding: 40px 0;
+    }
+
+    .smallscreencard .about{
+        width: 90%;
     }
 
     .pic {
+        width: 100%;
+    }
+
+    .smallscreencard .text{
         width: 100%;
     }
 
@@ -677,6 +712,12 @@ main>h1::after {
 
     .smallscreencard .text .title {
         font-size: 22px;
+    }
+
+    .smallscreencard .text .data p{
+        margin-bottom: 30px;
+        line-height: 24px;
+        font-weight: 400;
     }
 
 }
@@ -854,12 +895,21 @@ main>h1::after {
     padding: 0 1.3em;
 }
 
+.footer-logo{
+    width: 50%; 
+    margin-bottom: 5px;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
     .footer-distributed {
         font: bold 14px sans-serif;
+    }
+
+    .footer-logo{
+        width: 100%; 
     }
 
     .footer-distributed .footer-left,
@@ -944,7 +994,7 @@ main>h1::after {
 
 .statement {
     width: 50%;
-    background: linear-gradient(90deg, #ffffff 20px, transparent 1%) center, linear-gradient(#ffffff 20px, transparent 1%) center, #2d1c5e;
+    background: linear-gradient(90deg, #ffffff 21px, transparent 1%) center, linear-gradient(#ffffff 20px, transparent 1%) center, #2d1c5e;
     background-size: 22px 22px;
 }
 
@@ -974,7 +1024,7 @@ main>h1::after {
 
     .statement {
         width: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     .statement h2 {
@@ -986,7 +1036,7 @@ main>h1::after {
     .statement p {
         width: 80%;
         margin-left: 40px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .values {
@@ -996,5 +1046,12 @@ main>h1::after {
     .val {
         width: 50%;
 
+    }
+
+    .values h2 {
+        margin-top: 10%;
+        margin-left: 50px;
+        font-size: 60px;
+        font-weight: 400;
     }
 }
