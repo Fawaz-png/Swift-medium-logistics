@@ -363,7 +363,7 @@ main>h1::after {
 
     .about {
         flex-direction: column;
-        padding: 0;
+        padding: 40px 0;
         text-align: center;
     }
 
@@ -374,6 +374,10 @@ main>h1::after {
 
     .about img {
         width: 80%;
+    }
+
+    .text p {
+        font-weight: lighter;
     }
 }
 
@@ -391,7 +395,7 @@ main>h1::after {
 .projcard-container {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 80%;
 }
 
 .projcard {
@@ -439,7 +443,7 @@ main>h1::after {
 
 .projcard-img {
     position: absolute;
-    width: 50%;
+    width: 35%;
     top: 0;
     left: 0;
     transition: transform 0.2s ease;
@@ -463,7 +467,16 @@ main>h1::after {
     top: 7%;
     bottom: 7%;
     left: 415px;
-    width: calc(100% - 470px);
+    width: 60%;
+    font-size: 17px;
+}
+
+.projcard-textbox-right {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 55px;
+    width: 55%;
     font-size: 17px;
 }
 
@@ -480,9 +493,23 @@ main>h1::after {
     background: #ff0000bb;
     background: #fff;
     top: -20%;
-    left: -55px;
+    left: -65px;
     height: 140%;
     width: 60px;
+    transform: rotate(8deg);
+}
+
+.projcard-textbox-right::before,
+.projcard-textbox-right::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #ff0000bb;
+    background: #fff;
+    top: -20%;
+    right: -75px;
+    height: 140%;
+    width: 70px;
     transform: rotate(8deg);
 }
 
@@ -717,7 +744,7 @@ main>h1::after {
     .smallscreencard .text .data p{
         margin-bottom: 30px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: lighter;
     }
 
 }
@@ -988,7 +1015,7 @@ main>h1::after {
 
 .val p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: lighter;
 }
 
 

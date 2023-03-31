@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, serif, sans-serif;
 }
 
 
@@ -10,7 +10,7 @@
 /*Header*/
 
 header {
-    background-image: linear-gradient(rgba(0, 133, 222, 0.151), rgba(0, 133, 222, 0.151)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 133, 222, 0.151), rgba(0, 133, 222, 0.151)), url(../img/hero.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -53,7 +53,6 @@ nav {
 
 .navlinks a:hover::after {
     width: 100%;
-
 }
 
 .navlinks .active::after{
@@ -65,7 +64,7 @@ nav {
     margin-top: 10px;
 }
 
-.navlinks .active:hover::after {
+.navlinks .active:hover::after{
     width: 0;
     transition: 0.3s;
 }
@@ -160,13 +159,13 @@ nav {
         display: inline-block;
     }
 
+    .navlinks .active::after{
+        display: none;
+    }
+
     .navlinks .active{
         background-color: white;
         color: red;
-    }
-
-    .navlinks .active::after{
-        display: none;
     }
 }
 
