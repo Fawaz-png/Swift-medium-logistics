@@ -242,11 +242,93 @@ nav {
 }
 
 
+.services_section {
+    width: 100%;
+    background:#fff;
+    height: auto;
+    background-size: 100%;
+    padding: 30px;
+    background-repeat: no-repeat;
+}
+
+.services_taital {
+    width: 100%;
+    font-size: 30px;
+    color: #252525;
+    text-align: center;
+    font-weight: bold;
+}
+.services_taital::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 10px;
+    background-color: #000;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 0px;
+    border-radius: 100px;
+}
+
+.services_text {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+}
+.services_box {
+    width: 100%;
+}
+
+.express_text {
+    width: 100%;
+    float: left;
+    font-size: 26px;
+    color: #252525;
+    text-align: center;
+    padding-top: 68px;
+}
+.lorem_text{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #252525;
+    text-align: center;
+}
+.seemore_bt{
+    width: 170px;
+    margin: 0 auto;
+}
+.seemore_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    padding-top: 20px;
+}
+.seemore_bt a:hover{
+    color: #0c426e;
+}
+.image_1{
+    width: 100%;
+    float: left;
+}
+.padding_right_0{
+    padding-right: 0px;
+}
+.padding_left_0{
+    padding-left: 0px;
+}
+
+
 
 
 .footer-distributed {
     background-color: #333333;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -421,7 +503,7 @@ nav {
     margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* responsive footer queries */
 
 @media (max-width: 880px) {
 
