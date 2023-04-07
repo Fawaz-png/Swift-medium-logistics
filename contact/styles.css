@@ -253,442 +253,72 @@ nav {
 
 /*End of Responsive header's text box*/
 
+/* contact section start */
 
-
-
-/* Perks section*/
-
-.perks {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.perks>h1 {
-    font-size: 36px;
-    font-weight: 500;
-}
-
-.perks>h1::after {
-    content: "";
-    width: 10%;
-    padding: 1px 3px;
-    height: 4px;
-    background-color: red;
-    display: block;
+.contact_section{
+    width: 80%;
     margin: 0 auto;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.row {
     margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
 }
 
-.col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 0 10px;
-    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.226);
-}
-
-.col .img-container {
-    width: 65%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-.img-container img {
+.contact-forms{
     width: 100%;
 }
 
-.img-container-2 img {
-    width: 100%;
-}
-
-.img-container-2 {
-    width: 45%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-.img-container-3 img {
-    width: 100%;
-}
-
-.img-container-3 {
-    width: 55%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-.col h3 {
-    font-weight: 600;
-    margin: 0;
+.text{
     text-align: center;
 }
 
-.col p {
-    line-height: 25px;
-    font-weight: 400;
-    margin-bottom: 5%;
-    padding: 15px;
+.mail_text {
+   width: 100%;
+   padding: 20px 30px;
+   margin-top: 30px;
+   border-radius: 5px;
+   border: 0px;
+   box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.226);
+   font-size: 16px;
 }
 
-/*End of Perks section*/
-
-
-
-
-/* Responsive coloumn for perks */
-
-@media screen and (width: 810px) {
-    .col {
-        padding: 25px;
-    }
-
-    .col p {
-        display: none;
-    }
+input.mail_text::placeholder {
+    color: #0e0e0e;
 }
 
-
-@media screen and (max-width:750px) {
-    .perks {
-        padding-top: 50px;
-        margin-bottom: 15%;
-    }
-
-    .perks h1 {
-        margin-bottom: 10%;
-    }
-
-    .perks h1::after,
-    .about-us h1::after {
-        width: 20%;
-    }
-
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col {
-        width: 100%;
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.205);
-        padding: 40px 10px;
-    }
-
-    .col h3 {
-        margin: 0;
-        font-size: 22px;
-    }
-
-    .col p {
-        margin: 0;
-        display: none;
-    }
-
-    .col .img-container {
-        margin-top: 0;
-        margin-bottom: 25px;
-    }
-
-    .img-container img {
-        width: 70%;
-    }
-
-    .img-container-2 {
-        margin-top: 0;
-        margin-bottom: 25px;
-    }
-
-    .img-container-2 img {
-        width: 65%;
-    }
-
-    .img-container-3 img {
-        width: 55%;
-    }
-
-    .img-container-3 {
-        margin-top: 0;
-        margin-bottom: 8%;
-    }
-
-}
-
-/*End of Responsive coloumn for perks */
-
-
-
-
-
-/*About us section*/
-
-.benefits {
+.message-bt {
+    color: #0e0e0e;
     width: 100%;
-    display: grid;
-    margin: auto;
-    place-items: center;
-}
-
-.benefits>h1 {
-    font-size: 36px;
-    font-weight: 500;
-}
-
-.benefits>h1::after {
-    content: "";
-    width: 10%;
-    padding: 1px 20px;
-    height: 4px;
-    background-color: red;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.ben-row {
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    width: 100%;
-    padding: 0 1em 1em 1em;
-    text-align: center;
-}
-
-.card {
-    width: 100%;
-    height: 100%;
-    padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, red 50%);
-    background-size: 100% 200%;
-    background-position: 0 2.5%;
-    border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1f194c;
-    margin: 1em 0;
-}
-
-.card p {
-    color: #575a7b;
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-}
-
-.icon-wrapper {
-    position: relative;
-    margin: auto;
-    font-size: 30px;
-    height: 2.5em;
-    width: 4em;
-    color: #ffffff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: 0.5s;
-}
-
-.card:hover {
-    background-position: 0 100%;
-}
-
-.card:hover .icon-wrapper {
-    background-color: #ffffff;
-    color: red;
-}
-
-.card:hover h3 {
-    color: #ffffff;
-}
-
-.card:hover p {
-    color: #f0f0f0;
-}
-
-
-@media screen and (max-width:750px) {
-    .ben-row {
-        margin-top: 10%;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    section {
-        padding: 0 2em;
-    }
-
-    .column {
-        flex: 0 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    section {
-        padding: 1em 3em;
-    }
-
-    .column {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-    }
-}
-
-
-
-
-.testimonial {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.testimonial>h1 {
-    font-size: 36px;
-    font-weight: 500;
-}
-
-.testimonial>h1::after {
-    content: "";
-    width: 10%;
-    padding: 1px 20px;
-    height: 4px;
-    background-color: red;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
+    font-size: 18px;
+    padding: 55px 15px 15px 15px;
+    border: 0px;
+    height: 167px;
     margin-top: 30px;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.226);
 }
 
-.testimonial-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
+textarea#comment::placeholder {
+    color: #0e0e0e;
 }
 
-
-.testimonial-container {
-    border-radius: 15px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px 50px;
-    position: relative;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.205);
-    margin-top: 5%;
-    margin-bottom: 5%;
+.send_bt {
+    width: 150px;
+    float: left;
+    margin-top: 40px;
 }
-
-.fa-quote {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 28px;
-    position: absolute;
-    top: 70px;
-}
-
-.fa-quote-left {
-    left: 40px;
-}
-
-.fa-quote-right {
-    right: 40px;
-}
-
-.testimonial {
-    line-height: 28px;
-    text-align: center;
-}
-
-.user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.user .user-image {
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    object-fit: cover;
-}
-
-.user .user-details {
-    margin-left: 10px;
-}
-
-.user .username {
-    margin: 0;
-}
-
-.user .role {
-    font-weight: normal;
-    margin: 10px 0;
-}
-
-.progress-bar {
-    background-color: red;
-    height: 2px;
+.send_bt a {
+    text-decoration: none;
     width: 100%;
-    animation: grow 3.5s linear infinite;
-    transform-origin: left;
-    margin: 10px 0 20px 0;
+    float: left;
+    background-color: #13a25d;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0px;
+    font-size: 18px;
+}
+.send_bt a:hover {
+    background-color: #ffffff;
+    color: #000;
 }
 
-@keyframes grow {
-    0% {
-        transform: scaleX(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .testimonial {
-        margin-top: 15%;
-    }
-
-    .testimonial-container {
-        padding: 20px 30px;
-        margin-top: 10%;
-    }
-
-    .fa-quote {
-        display: none;
-    }
-}
-
-
-
-
+/* contact section end */
 
 
 .footer-distributed {
