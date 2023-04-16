@@ -2,21 +2,35 @@ const navopen = document.querySelector('.nav-open-btn');
 const navclose = document.querySelector('.nav-close-btn');
 const navlinks = document.querySelector('.navlinks')
 const navWrapper = document.querySelector('.wrapper')
+const orderFormBtn = document.querySelector('.form-open-btn')
+const orderForm = document.querySelector('.modal-container')
+const orderFormCloseBtn = document.querySelector('.form-close-btn')
 
 navopen.addEventListener('click', () => {
-    navlinks.style.display = "block";
-    navWrapper.style.display = "block";
+  navlinks.style.display = "block";
+  navWrapper.style.display = "block";
 });
 
 navclose.addEventListener('click', () => {
-    navlinks.style.display = "none";
-    navWrapper.style.display ="none"
+  navlinks.style.display = "none";
+  navWrapper.style.display = "none"
 });
 
 navWrapper.addEventListener('click', () => {
-    navlinks.style.display = "none";
-    navWrapper.style.display ="none"
+  navlinks.style.display = "none";
+  navWrapper.style.display = "none"
 });
+
+orderFormBtn.addEventListener('click', () => {
+  orderForm.style.display = 'block';
+});
+
+orderFormCloseBtn.addEventListener( 'click', () => {
+  orderForm.style.display = "none";
+});
+
+
+
 
 
 

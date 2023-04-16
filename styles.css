@@ -15,6 +15,7 @@ header {
     background-size: cover;
     width: 100%;
     min-height: 120vh;
+    position: relative;
 }
 
 nav {
@@ -83,7 +84,7 @@ nav {
     margin-left: 30px;
     margin-bottom: 35px;
     color: white;
-    font-size: 22px;
+    font-size: 42px;
     font-weight: bolder;
     cursor: pointer;
     display: none;
@@ -95,6 +96,117 @@ nav {
 
 .nav-close-btn:hover {
     color: black;
+}
+
+.modal-container{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    padding: 40px 0;
+}
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop{
+    from {top:-300px; opacity: 0}
+    to {top:0; opacity: 1}
+}
+
+.form-close-btn{
+    font-size: 38px;
+    font-weight: bolder;
+    cursor: pointer;
+    float: right;
+}
+
+.form-close-btn:hover,
+.form-close-btn:focus{
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-header{
+    color: black;
+    background-color: red;
+    padding: 20px 16px;
+}
+
+.modal-header h1{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal-body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px 0 16px 0;
+}
+
+.mail_text {
+    width: 100%;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.226);
+    font-size: 16px;
+}
+
+
+.message-bt {
+    color: #0e0e0e;
+    width: 100%;
+    font-size: 18px;
+    padding: 55px 15px 15px 15px;
+    border: 0px;
+    height: 167px;
+    margin-top: 30px;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.226);
+}
+
+
+.modal-footer{
+    background-color: red;
+    padding: 2px 16px;
+}
+
+.send_bt {
+    width: 150px;
+    float: left;
+    margin-top: 40px;
+}
+
+.send_bt a {
+    text-decoration: none;
+    width: 100%;
+    float: left;
+    background-color: #13a25d;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0px;
+    font-size: 18px;
+}
+
+.send_bt a:hover {
+    background-color: #ffffff;
+    color: #000;
 }
 
 /*End of Header*/
@@ -191,7 +303,7 @@ nav {
 
 .textbox p {
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 23px;
 }
@@ -202,7 +314,7 @@ nav {
     text-decoration: none;
     border: 1px solid #fff;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     background: transparent;
     cursor: pointer;
     font-size: 16px;

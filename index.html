@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
 
+
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -28,7 +29,7 @@
       <span class="nav-open-btn">=</span>
       <div class="wrapper">
         <div class="navlinks">
-          <span class="nav-close-btn">X</span>
+          <span class="nav-close-btn">&times;</span>
           <a href="index.html" class="active">Home</a>
           <a href="about_us.html">About</a>
           <a href="services.html">Services</a>
@@ -38,12 +39,52 @@
       </div>
     </nav>
 
+
+
     <div class="textbox">
       <h1 onclick="close()">Beyond Speedy Delivery
         <p>Your plug for swift logistics services</p>
-        <a href="https://www.deliveryorderforms.com/orderWithoutUpfrontPay/3NDd0s8MA0">Make a delivery now</a>
+        <a class="form-open-btn">Make a delivery now</a>
     </div>
   </header>
+
+
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="form-close-btn">&times;</span>
+        <h1 class="contact-header">GET IN TOUCH</h1>
+
+      </div>
+
+      <div class="modal-body">
+        <form name="order-form" method="POST" data-netlify="true">
+          <p>Customer Information</p>
+          <input type="text" class="mail_text" placeholder="Full Name" name="Full Name">
+          <input type="text" class="mail_text" placeholder="Phone Number" name="Sender Phone Number">
+          <input type="email" class="mail_text" placeholder="Email" name="sender email">
+
+          <p>Delivery Information</p>
+          <textarea class="message-bt" placeholder="Delivery Address" rows="5" id="comment" name="address"></textarea>
+          <input type="text" class="mail_text" placeholder="Recipient name" name="recipinet name">
+          <input type="text" class="mail_text" placeholder="Recipient Phone Number" name="Recipient Phone Number">
+          <input type="email" class="mail_text" placeholder="Email" name="recipient email">
+          <label style="font-size: 16px;"> Delivery Date: <input type="date" class="mail_text" name="delivery date"> </label>
+          <label> Delivery Time: <input type="time" class="mail_text" name="delivery date"> </label>
+
+          <p>Item Information</p>
+          <input type="text" class="mail_text" placeholder="Item type" name="Full Name">
+          <input type="text" class="mail_text" placeholder="Full Name" name="Full Name">
+          <button type="submit"> Submit </button>
+        </form>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  </div>
 
 
 
@@ -53,6 +94,7 @@
     <!-- Perks -->
 
     <section class="perks">
+
       <h1>Why choose <span style="color: red;">us?</span></h1>
 
       <div class="row">
@@ -273,7 +315,7 @@
 
   <script src="https://apps.elfsight.com/p/platform.js"></script>
   <script src="script.js" defer></script>
-  
+
 </body>
 
 </html>

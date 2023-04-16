@@ -186,7 +186,7 @@ nav {
 
 .textbox p {
     margin-top: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 18px;
     line-height: 23px;
 }
@@ -197,7 +197,7 @@ nav {
     text-decoration: none;
     border: 1px solid #fff;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 30px;
     background: transparent;
     cursor: pointer;
     font-size: 16px;
@@ -241,88 +241,52 @@ nav {
     }
 }
 
-
-.services_section {
-    width: 100%;
-    background:#fff;
-    height: auto;
-    background-size: 100%;
-    padding: 30px;
-    background-repeat: no-repeat;
+main >h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
-.services_taital {
+main >h1::after {
+    content: "";
+    width: 10%;
+    padding: 1px 3px;
+    height: 4px;
+    background-color: red;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px; 
+}
+
+.blog_section{
     width: 100%;
-    font-size: 30px;
-    color: #252525;
-    text-align: center;
+    margin-bottom: 5%;
+}
+.blog_img{
+    width: 4
+    0%;
+}
+.blog_taital{
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #141414;
     font-weight: bold;
-}
-.services_taital::after {
-    content: '';
-    position: absolute;
-    width: 85px;
-    height: 10px;
-    background-color: #000;
-    left: 0px;
-    right: 0px;
-    margin: 0 auto;
-    bottom: 0px;
-    border-radius: 100px;
-}
-
-.services_text {
-    width: 100%;
-    font-size: 16px;
-    color: #000;
-    text-align: center;
-    margin: 0px;
-    padding-top: 30px;
-}
-.services_box {
-    width: 100%;
-}
-
-.express_text {
-    width: 100%;
-    float: left;
-    font-size: 26px;
-    color: #252525;
-    text-align: center;
-    padding-top: 68px;
-}
-.lorem_text{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 15px;
-    color: #252525;
-    text-align: center;
-}
-.seemore_bt{
-    width: 170px;
-    margin: 0 auto;
-}
-.seemore_bt a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #000;
-    text-align: center;
     padding-top: 20px;
 }
-.seemore_bt a:hover{
-    color: #0c426e;
-}
-.image_1{
+.blog_text {
     width: 100%;
     float: left;
+    font-size: 16px;
+    color: #141414;
+    margin: 0px;
+    padding-top: 20px;
 }
-.padding_right_0{
-    padding-right: 0px;
-}
-.padding_left_0{
-    padding-left: 0px;
-}
+
+
 
 
 
